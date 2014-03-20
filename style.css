@@ -11,7 +11,7 @@ header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 
 main{margin:0 auto;width:998px;position:relative;clear:both;}
 
-#header{}
+header{}
 
 #about{}
 
