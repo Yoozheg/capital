@@ -35,7 +35,11 @@ header{}
 #services ol li p{font:15px "Trebuchet MS";color:#ffffff;margin-bottom:20px;}
 #services ol li.nechet img{padding:60px 40px 60px 0}
 #services ol li.chet img{padding:60px 0 60px 40px}
-#why{}
+
+#why{background:#e7e5dd;color:#68655e;height:590px;}
+#why h2{text-align:center;text-transform:uppercase;font:36px "Trebuchet MS";padding-top:60px;padding-bottom:10px;}
+#why p{font:18px "Trebuchet MS";padding-top:180px;;background:url(images/kamen.png) no-repeat center;text-align:center;display:inline-block;position:relative;width:328px}
+#why p.last{margin-left:175px;}
 
 #black{}
 
