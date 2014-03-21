@@ -15,7 +15,16 @@ header{}
 
 #about{}
 
-#garant{}
+#garant{background: url(images/fon3.jpg) no-repeat top center;background-color:#1d1c17; height:332px;}
+#garant h2{text-transform:uppercase;padding:40px 0;text-align:center;font:36px "Trebuchet MS";color:#ffffff }
+#garant p{text-align:center;color:#ffffff;font:18px "Trebuchet MS";margin-top:-5px;}
+#garant div{vertical-align:top;position:relative;display:inline-block;font:14px "Trebuchet MS"; color:#ffffff;text-align:left;margin-top:30px;}
+.divone{width:290px;}
+.divtwo{width:340px;margin-right:-14px;}
+.divthree{width:370px;}
+#garant h3{float:left;font:40px "Tahoma"; font-weight:bold;height:100px;padding-top:10px;padding-right:5px;}
+.two{color:#c1e723}
+.three{color:#e7236d}
 
 #services{}
 
