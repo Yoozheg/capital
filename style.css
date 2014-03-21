@@ -26,8 +26,15 @@ header{}
 .two{color:#c1e723}
 .three{color:#e7236d}
 
-#services{}
-
+#services{background:url(images/fon4.jpg) no-repeat top center;background-color:#e6b53e;height:640px;}
+#services h2 {font:36px "Trebuchet MS";text-transform:uppercase;padding:50px 0;text-align:center;}
+#services ol{list-style:none;}
+.chet{text-align:right;}
+.nechet{text-align:left;}
+#services ol li h3{font:24px "Trebuchet MS";padding-bottom:10px;}
+#services ol li p{font:15px "Trebuchet MS";color:#ffffff;margin-bottom:20px;}
+#services ol li.nechet img{padding:60px 40px 60px 0}
+#services ol li.chet img{padding:60px 0 60px 40px}
 #why{}
 
 #black{}
