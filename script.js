@@ -100,7 +100,25 @@
  }
  
  window.onload = function(e){
-  	$('#splash').onclick = function(){
+  var forms = document.querySelectorAll('form img');
+  for(var i = 0; i < forms.length; ++i){
+   forms[i].onclick = submit;
+  }
+  function submit(event){
+   var form = this.parentNode;
+   var inputs = form.querySelectorAll('input');
+   var data = {};
+   for(var i = 0; i < inputs.length; ++i){
+    if(inputs[i].value.length > 0 && inputs[i].checkValidity()) data[inputs[i].name] = inputs[i].value; else return alert("Как минимум одно из полей не заполнено!")
+   }
+   ajax(data, 'server.php', function(r){
+    alert(r);
+   });
+   $('#splash').style.display = 'none';
+   return false;
+  }
+	
+	$('#splash').onclick = function(){
 	 $('#splash').style.display = 'none';
 	}
 	$('#splash form').onclick = function(e){
@@ -109,25 +127,7 @@
    e.cancelBubble = true;
 	 return false;
 	}
-	function form(form){
-   var inputs = form.querySelectorAll('input');
-   var data = {};
-   for(var i = 0; i < inputs.length; ++i){
-    if(inputs[i].value.length > 0 && inputs[i].checkValidity()) data[inputs[i].name] = inputs[i].value; else return alert("Как минимум одно из полей не заполнено!")
-   }
-	 var textarea = form.querySelector('textarea');
-	 data['comment'] = textarea.value;
-   ajax(data, 'server.php', function(r){
-    alert(r);
-   });
-	 $('#splash').style.display = 'none';
-   return false;	 
-	};
 	
-	$('#splash form img').onclick = function(event){ return form($('#splash form')); }
-	$('#work form img').onclick = function(event){ return form($('#work form')); }
-	$('footer form img').onclick = function(event){ return form($('footer form')); }
-
 	var buttons = document.querySelectorAll('.button');
 	function buttonClick(){
 	 $('#splash').style.display = 'block';

@@ -1,5 +1,5 @@
 <?php
- $address = "info@rosenergo.info"; // АДРЕС ПОЧТЫ МЕНЯТЬ ТУТ
+ $address = "name@domain.com"; // АДРЕС ПОЧТЫ МЕНЯТЬ ТУТ
  
  function getStr($data, $default = ""){
   if(!isset($_POST[$data])) return $default;
@@ -12,14 +12,13 @@
  $phone = getStr('phone');
  $email = getStr('email');
  $comment = getStr('comment');
+ $present = getStr('present');
+ $color = getStr('color');
 
- $site = "RosEnergo";
+ $site = "КАПИТАЛЪ";
  $subject = "Заявка с сайта " . $site;
  
  $mes = "Имя: ".$name." \nТелефон: ". $phone;
- 
- if($email)   $mes .= "\nАдрес электронный почты: " . $email;
- if($comment) $mes .= "\nКомментарий: " . $comment;
  
  $additional = "Content-type:text/plain;charset = UTF-8\r\nFrom: " . $site;
  if($email) $additional .= "\r\nReply-To: " . $email;

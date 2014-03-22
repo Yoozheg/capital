@@ -8,10 +8,26 @@ header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 .right{float:right}
 .hide{display:none}
 .show{display:block}
+.button{cursor:pointer}
 
-main{margin:0 auto;width:998px;position:relative;clear:both;}
+section{clear:both}
+main{margin:0 auto;width:998px;position:relative}
 
-header{}
+header{background:url(images/fon.jpg) center top no-repeat;height:771px;text-align:center}
+#header p{font-family:"Open Sans";color:#f4f4f4;text-align:left}
+#header>p{font-size:17px}
+#header>div>p{font-size:20px}
+header h1,header h2,header h3{text-align:center}
+header h1,header h2{text-transform:uppercase}
+header h1{font-family:"Trebuchet MS";font-weight:bold;font-size:47px;color:white;background:rgba(0,0,0,.7);padding:7px 0 6px;margin-top:186px}
+header h2{margin-top:48px;color:white;font-size:24px;font-weight:normal}
+header h3{clear:both;color:#f63449;font-size:22px;font-weight:normal;position:relative;top:-94px}
+header h2 p,header h3 p{background:rgba(0,0,0,.7);margin:0 auto;display:inline-block;padding:10px 16px}
+header h3 p{padding:10px 30px}
+header form{position:relative;top:-94px}
+header form,#footer form,#splash form{background:rgba(0,0,0,.7);display:inline-block;padding:16px 20px}
+header form input,#footer form input,#splash form input{width:169px;height:51px;border:1px solid rgba(0,0,0,.7);border-radius:6px;text-align:center;font-family:Tahoma;font-style:italic;color:black;background:#f4f4f4;font-size:16px;display:inline-block;margin:0 10px;float:left}
+header form img, #footer form img,#splash form img{cursor:pointer;display:inline-block;margin:0 10px;height:51px;width:171px}
 
 #about{background:url('images/green.png') center top no-repeat;height:744px;}
 #about main{text-align:center;}
@@ -57,13 +73,13 @@ header{}
 #black p.b2{width:230px;}
 #black p.b3{width:230px;}
 #black p.b4{width:237px;padding-top:23px;height:174px;}
-#black p span{display:block;font:bold 108px "Trebuchet MS";}
+#black p span{display:block;font:bold 108px "Trebuchet MS"}
 
-#documents{background:url('images/fon6.jpg') center top no-repeat;height:366px;}
-#documents main{text-align:center;}
-#documents h4{color:white;font:25px "Trebuchet MS";padding-top:30px;text-transform:uppercase;}
-#documents ul{text-align:left;padding:25px 0 30px 100px;}
-#documents li{color:white;font:16px "Trebuchet MS";list-style-position:inside;}
+#documents{background:url('images/fon6.jpg') center top no-repeat;height:366px}
+#documents main{text-align:center}
+#documents h4{color:white;font:25px "Trebuchet MS";padding-top:30px;text-transform:uppercase}
+#documents ul{text-align:left;padding:25px 0 30px 100px}
+#documents li{color:white;font:16px "Trebuchet MS";list-style-position:inside}
 
 #comments_head{text-align:center;color:black;font:30px "Trebuchet MS";text-transform:uppercase;padding:30px 0;}
 
@@ -72,11 +88,21 @@ header{}
 #comments article h4{font:bold 20px "Trebuchet MS";padding-top:40px;}
 #comments article p{font:16px "Trebuchet MS";padding-top:20px;}
 
-#footer{}
+#footer{background:url(images/fon2.jpg) center top no-repeat;height:499px;text-align:center}
+#footer main{padding-top:89px}
+#footer main div{background:rgba(0,0,0,.7);color:white;position:relative;padding:8px}
+#footer main div h1{font-family:"Impact";font-size:48px;font-weight:bold;text-transform:uppercase}
+#footer main div p{font-family:"Trebuchet MS";font-size:20px;font-weight:normal}
+#footer form,#splash form{margin-top:110px}
 
-footer{text-align:right;color:black;padding:10px 0;}
-footer p{font:20px "Open Sans";}
-footer p.left{font:17px "Open Sans";text-align:left;}
+footer{text-align:right;color:black;padding:10px 0}
+footer p{font:20px "Open Sans"}
+footer p.left{font:17px "Open Sans";text-align:left}
 
+#splash{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);color:white;text-shadow:0 0 1px #666;display:none}
+#splash main{text-align:center;top:150px}
+#splash p{color:white;text-align:center}
+#splash form{margin:0 auto 0;position:static}
 
-#splash{}
+#copyright{text-align:center;font-size:12px;color:gray;font-family:Calibri}
+#copyright a{color:lime;text-decoration:none}
