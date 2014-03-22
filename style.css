@@ -13,7 +13,16 @@ main{margin:0 auto;width:998px;position:relative;clear:both;}
 
 header{}
 
-#about{}
+#about{background:url('images/green.png') center top no-repeat;height:744px;}
+#about main{text-align:center;}
+#about h3{color:black;font:36px "Trebuchet MS";text-transform:uppercase;padding-top:50px;}
+#about p{color:white;font:16px "Trebuchet MS";padding-top:45px;}
+#about ul{list-style:none;padding-top:30px;}
+#about li{display:inline-block;width:237px;padding-top:250px;color:white;font:18px "Trebuchet MS";padding-bottom:90px;}
+#about .a1{background:url('images/a1.png') center top no-repeat;}
+#about .a2{background:url('images/a2.png') center top no-repeat;}
+#about .a3{background:url('images/a3.png') center top no-repeat;}
+#about .a4{background:url('images/a4.png') center top no-repeat;}
 
 #garant{background: url(images/fon3.jpg) no-repeat top center;background-color:#1d1c17; height:332px;}
 #garant h2{text-transform:uppercase;padding:40px 0;text-align:center;font:36px "Trebuchet MS";color:#ffffff }
@@ -41,14 +50,33 @@ header{}
 #why p{font:18px "Trebuchet MS";padding-top:180px;;background:url(images/kamen.png) no-repeat center;text-align:center;display:inline-block;position:relative;width:328px}
 #why p.last{margin-left:175px;}
 
-#black{}
+#black{background-color:black ;background:url('images/fon5.jpg') center top no-repeat;color:white;}
+#black main{height:197px;}
+#black p{display:inline-block;border-left:2px solid white;height:197px;vertical-align:top;padding-left:10px;}
+#black p.b1{width:240px;border-left:none;}
+#black p.b2{width:230px;}
+#black p.b3{width:230px;}
+#black p.b4{width:237px;padding-top:23px;height:174px;}
+#black p span{display:block;font:bold 108px "Trebuchet MS";}
 
-#documents{}
+#documents{background:url('images/fon6.jpg') center top no-repeat;height:366px;}
+#documents main{text-align:center;}
+#documents h4{color:white;font:25px "Trebuchet MS";padding-top:30px;text-transform:uppercase;}
+#documents ul{text-align:left;padding:25px 0 30px 100px;}
+#documents li{color:white;font:16px "Trebuchet MS";list-style-position:inside;}
 
-#comments{}
+#comments_head{text-align:center;color:black;font:30px "Trebuchet MS";text-transform:uppercase;padding:30px 0;}
+
+#comments{background-color:#f2f2f2;padding-bottom:40px;}
+#comments article{display:inline-block;width:49%;vertical-align:top;text-align:center;color:black;}
+#comments article h4{font:bold 20px "Trebuchet MS";padding-top:40px;}
+#comments article p{font:16px "Trebuchet MS";padding-top:20px;}
 
 #footer{}
 
-footer{}
+footer{text-align:right;color:black;padding:10px 0;}
+footer p{font:20px "Open Sans";}
+footer p.left{font:17px "Open Sans";text-align:left;}
+
 
 #splash{}
